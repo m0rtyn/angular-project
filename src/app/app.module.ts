@@ -1,21 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-
+import { PageLayoutModule } from './page-layout/page-layout.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: '', component: AppComponent },
-      { path: 'ui-kit', component: PageUiKitComponent },
-    ])
+    PageLayoutModule
+    // RouterModule.forRoot([
+    //   { path: '', component: AppComponent }
+    // ])
   ],
   providers: [],
   bootstrap: [AppComponent]

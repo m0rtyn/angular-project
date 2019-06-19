@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageUiKitComponent } from './page-ui-kit.component';
+import { UiKitViewerComponent } from './ui-kit-viewer.component';
 
-describe('PageUiKitComponent', () => {
-  let component: PageUiKitComponent;
-  let fixture: ComponentFixture<PageUiKitComponent>;
+describe('UiKitViewerComponent', () => {
+  let component: UiKitViewerComponent;
+  let fixture: ComponentFixture<UiKitViewerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageUiKitComponent ]
+      declarations: [ UiKitViewerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageUiKitComponent);
+    fixture = TestBed.createComponent(UiKitViewerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

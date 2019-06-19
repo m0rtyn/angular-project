@@ -1,0 +1,19 @@
+app-toolbar-layout {
+    width: 100%;
+    height: 200px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+app-sidebar-layout {
+    width: 250px;
+}
+
+.content {
+    flex: 1 1 auto;
+}
