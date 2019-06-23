@@ -1,19 +1,16 @@
-app-toolbar-layout {
-    width: 100%;
-    height: 200px;
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: calc(100vh - 200px);
-}
-
-app-sidebar-layout {
-    width: 250px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .content {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }

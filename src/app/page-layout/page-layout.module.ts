@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ToolbarLayoutComponent } from './toolbar-layout/toolbar-layout.component';
-import { SidebarLayoutComponent } from './sidebar-layout/sidebar-layout.component';
 import { PageLayoutComponent } from './page-layout.component';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [ToolbarLayoutComponent, SidebarLayoutComponent, PageLayoutComponent],
+  declarations: [PageLayoutComponent, HeaderComponent, SidebarComponent],
   imports: [
     CommonModule
   ],
