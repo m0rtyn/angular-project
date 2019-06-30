@@ -1,0 +1,43 @@
+.button {
+  background-color: var(--color-highlight);
+  color: var(--color-white);
+  border-radius: 2px;
+  padding: 8px 16px;
+  margin: 8px;
+  border: none;
+
+  &:hover, &:focus {
+    background-color: var(--color-highlight-3);
+  }
+
+  &:active {
+    background-color: var(--color-highlight-2);
+  }
+
+  &[disabled] {
+    background-color: var(--color-white);
+    color: var(--color-hinted);
+    border: 1px solid currentColor;
+  }
+}
+
+.button--pseudo {
+  background-color: transparent;
+  color: var(--color-highlight);
+
+  &:hover, &:focus {
+    background-color: transparent;
+    color: var(--color-highlight-3);
+  }
+
+  &:active {
+    background-color: transparent;
+    color: var(--color-highlight-2);
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    color: var(--color-hinted);
+    border: none;
+  }
+}
