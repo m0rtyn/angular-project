@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputFieldComponent } from './input-field/input-field.component';
+import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 
-const components = [InputFieldComponent, ButtonComponent, DropdownComponent]
+const components = [InputComponent, ButtonComponent, DropdownComponent];
 
 @NgModule({
   declarations: [...components],

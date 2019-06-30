@@ -1,0 +1,15 @@
+.input {
+
+}
+
+.input_label {
+  font-size: var(--font-size-small);
+}
+
+.input_field {
+  display: block;
+  height: 32px;
+  border: 1px solid var(--color-hinted);
+  border-radius: 2px;
+  padding: 0 10px;
+}
