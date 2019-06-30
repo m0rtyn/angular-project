@@ -1,6 +1,12 @@
+:root {
+  --font-size-small: 0.86rem;
+  --font-size-default: 14px;
+  --line-height-default: 1.57;
+}
+
 body {
-  font-size: 14px;
-  line-height: 1.57;
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
 }
 
 h1 {
@@ -9,21 +15,25 @@ h1 {
 }
 
 h2 {
-  font-size: 0.7rem;
+  font-size: 1.42rem;
   line-height: 1.6;
 }
 
 h3 {
-  font-size: 0.777rem;
+  font-size: 1.28rem;
   line-height: 1.55;
 }
-h2 {
-  font-size: 0.7rem;
-}
-h2 {
-  font-size: 0.7rem;
+
+a {
+  color: var(--color-highlight);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .text-secondary {
-  font-size: 1.16rem;
+  font-size: var(--font-size-small);
 }
