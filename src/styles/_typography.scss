@@ -1,12 +1,7 @@
-:root {
-  --font-size-small: 0.86rem;
-  --font-size-default: 14px;
-  --line-height-default: 1.57;
-}
-
 body {
   font-size: var(--font-size-default);
   line-height: var(--line-height-default);
+  color: var(--color-font-main);
 }
 
 h1 {

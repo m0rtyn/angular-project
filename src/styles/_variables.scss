@@ -1,4 +1,14 @@
 :root {
+
+  // === FONTS ===
+  --font-family-default: Open Sans, HelveticaNeue, Helvetica, Arial, sans-serif;
+
+  // === TYPOGRAPHY ===
+  --font-size-small: 0.86rem;
+  --font-size-default: 14px;
+  --line-height-default: 1.57;
+
+  // === COLORS ===
   --color-font-main: hsla(0, 0%, 0%, 0.9);
   --color-font-inverted: hsl(0, 0%, 100%, 0.9);
   --color-panel: hsl(209, 38%, 25%);
