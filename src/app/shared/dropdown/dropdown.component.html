@@ -1,3 +1,19 @@
-<p>
-  dropdown works!
-</p>
+<label
+  class="dropdown"
+  [class.dropdown--error]="error"
+  [class.dropdown--disabled]="disabled"
+>
+  <span class="dropdown_label">
+    <ng-content></ng-content>
+  </span>
+  <select
+    class="dropdown_field"
+    [disabled]="disabled"
+  >
+    <option class="dropdown_placeholder">{{placeholder}}</option>
+    <option value="value-1">Value 1</option>
+    <option value="value-2">Value 2</option>
+    <option value="value-3">Value 3</option>
+  </select>
+</label>
+
