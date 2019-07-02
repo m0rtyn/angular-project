@@ -7,13 +7,22 @@
 
 <p>
   <app-button>Default button</app-button>
-  <app-button [disabled]="true">Disabled button</app-button>
+  <app-button disabled="true">Disabled button</app-button>
   <br>
-  <app-button [pseudo]="true">Disabled button</app-button>
-  <app-button [pseudo]="true" [disabled]="true">Disabled button</app-button>
+  <app-button pseudo="true">Pseudo button</app-button>
+  <app-button pseudo="true" [disabled]="true">Disabled pseudo button</app-button>
 </p>
 
 <p>
-  <app-input placeholder="placeholder">with label</app-input>
   <app-input></app-input>
+  <app-input placeholder="Placeholder">With label</app-input>
+  <app-input placeholder="Placeholder" error="true">With error</app-input>
+  <app-input placeholder="Placeholder" disabled="true">Disabled input</app-input>
+</p>
+
+<p>
+  <app-dropdown></app-dropdown>
+  <app-dropdown placeholder="Placeholder"></app-dropdown>
+  <app-dropdown placeholder="Placeholder" error="true"></app-dropdown>
+  <app-dropdown placeholder="Placeholder" disabled="true"></app-dropdown>
 </p>
