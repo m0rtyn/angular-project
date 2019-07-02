@@ -1,6 +1,14 @@
-<label class="input">
+<label
+  class="input"
+  [class.input--error]="error"
+  [class.input--disabled]="disabled"
+>
   <span class="input_label">
     <ng-content></ng-content>
   </span>
-  <input class="input_field" [placeholder]="placeholder"/>
+  <input
+    class="input_field"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+  />
 </label>

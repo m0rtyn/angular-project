@@ -10,6 +10,8 @@ export class InputComponent implements OnInit {
   constructor() {}
 
   @Input() placeholder = '';
+  @Input() error = false;
+  @Input() disabled = false;
 
   ngOnInit() {
   }
