@@ -1,0 +1,73 @@
+:host {
+  display: inline-block;
+  min-width: 256px;
+}
+
+.checkbox {
+  display: block;
+  padding: 8px;
+  color: var(--color-font-main);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-image: url(../../../assets/atoms/checkbox/icons/unchecked/normal1.svg)
+  }
+}
+
+.checkbox--checked {
+  &::before {
+    background-image: url(../../../assets/atoms/checkbox/icons/checked/normal.svg)
+  }
+}
+
+.checkbox--error {
+
+  .checkbox_label {
+    color: var(--color-error);
+  }
+
+  .checkbox_field {
+    border-color: var(--color-error);
+  }
+}
+
+.checkbox--disabled {
+
+  .checkbox_label {
+    color: var(--color-hinted);
+  }
+
+  .checkbox_field {
+    border-color: var(--color-hinted);
+  }
+}
+
+.checkbox_label {
+  font-size: var(--font-size-small);
+  margin-left: 4px;
+}
+
+.checkbox_field {
+  height: 16px;
+  width: 16px;
+  border: 1px solid var(--color-hinted);
+  border-radius: 2px;
+  padding: 0 10px;
+  display: none;
+
+  &[disabled] {
+    background-color: var(--color-white);
+  }
+
+  &:placeholder-shown {
+    color: var(--color-hinted);
+  }
+
+  &:focus {
+    border-color: var(--color-highlight);
+  }
+}

@@ -1,0 +1,16 @@
+<label
+  class="checkbox"
+  [class.checkbox--checked]="isChecked"
+  [class.checkbox--error]="error"
+  [class.checkbox--disabled]="disabled"
+>
+  <input
+    class="checkbox_field"
+    type="checkbox"
+    [disabled]="disabled"
+    (click)="handleClick()"
+  />
+  <span class="checkbox_label">
+    <ng-content></ng-content>
+  </span>
+</label>
