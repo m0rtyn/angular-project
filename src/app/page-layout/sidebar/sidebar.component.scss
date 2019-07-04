@@ -1,5 +1,9 @@
 :host {
-  background-color: lightgreen;
+  background-color: var(--color-panel);
+  color: var(--color-font-inverted);
+}
+
+.sidebar {
   width: 256px;
-  height: 100%;
+  padding: 0 32px;
 }

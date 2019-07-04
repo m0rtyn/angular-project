@@ -1,16 +1,24 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-panel);
+  padding: 0 8px;
 }
 
-.wrapper {
+.page-layout_wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
-  flex-grow: 1;
+  height: calc(100vh - var(--height-header));
 }
 
-.content {
-  flex: 1 1 auto;
+.page-layout_content {
+  height: 100%;
+  overflow: scroll;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  padding: 48px;
+  flex-grow: 1;
 }
