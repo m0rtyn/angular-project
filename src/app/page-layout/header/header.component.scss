@@ -1,4 +1,13 @@
 .header {
-  background-color: lightblue;
-  height: 56px;
+  display: flex;
+  background-color: var(--color-panel);
+  color: var(--color-font-inverted);
+  height: var(--height-header);
+
+  &_logo {
+    height: 22px;
+    box-sizing: content-box;
+    padding-left: 24px;
+    padding-top: 16px;
+  }
 }
