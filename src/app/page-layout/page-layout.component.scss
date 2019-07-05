@@ -1,4 +1,4 @@
-:host {
+.page-layout {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
@@ -19,6 +19,6 @@
   overflow: scroll;
   background-color: var(--color-white);
   border-radius: 2px;
-  padding: 48px;
+  padding: 0 48px;
   flex-grow: 1;
 }
