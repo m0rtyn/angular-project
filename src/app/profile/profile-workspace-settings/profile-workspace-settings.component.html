@@ -1,3 +1,21 @@
-<p>
-  profile-workspace-settings works!
-</p>
+<section class="profile_edit-details">
+  <h2>Workspace settings</h2>
+  <form action="saveDetailsChanges">
+    <div>
+      <app-dropdown>Time zone</app-dropdown>
+      <app-dropdown>Language</app-dropdown>
+    </div>
+    <div>
+      <app-dropdown>New task created by default as</app-dropdown>
+    </div>
+    <div>
+      <app-checkbox>
+        Show pop-up with suggestion to align the dates of tasks and subtasks.
+        <br>
+        <a>How does subtask alignment work?</a>
+      </app-checkbox>
+    </div>
+
+    <app-button>Save settings</app-button>
+  </form>
+</section>
