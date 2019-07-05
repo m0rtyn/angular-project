@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfileAvatarComponent } from './profile-avatar.component';
+import { UserBadgeComponent } from './user-badge.component';
 
-describe('ProfileAvatarComponent', () => {
-  let component: ProfileAvatarComponent;
-  let fixture: ComponentFixture<ProfileAvatarComponent>;
+describe('UserBadgeComponent', () => {
+  let component: UserBadgeComponent;
+  let fixture: ComponentFixture<UserBadgeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfileAvatarComponent ]
+      declarations: [ UserBadgeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfileAvatarComponent);
+    fixture = TestBed.createComponent(UserBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

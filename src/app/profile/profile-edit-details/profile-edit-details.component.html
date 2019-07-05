@@ -1,12 +1,12 @@
 <section class="profile_edit-details">
   <h2>Profile details</h2>
-  <div class="profile_user-badge">
-    <profile-avatar size="medium"></profile-avatar>
-    <div class="profile_user-info">
-      <h3 class="profile_user-name">Ivan Doev</h3>
-      <span>UI developer (crafting Team)</span>
-    </div>
-  </div>
+  <!-- <div class="profile_user-badge"> -->
+  <user-badge
+    size="medium"
+    fullName="Ivan Doev"
+    position="UI developer (crafting Team)"
+  >
+  </user-badge>
   <form class="profile_form" action="saveDetailsChanges">
     <div>
       <!-- <app-input [(ngModel)]="model.firstName")]>First name</app-input> -->

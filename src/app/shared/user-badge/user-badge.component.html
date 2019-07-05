@@ -1,0 +1,11 @@
+<div
+  class="user-badge"
+>
+  <div [ngClass]="['user-badge_avatar', 'user-badge_avatar--' + size]">
+    <img src="../../../assets/images/m-i.jpg">
+  </div>
+  <div [ngClass]="['user-badge_info', 'user-badge_info--' + size]">
+    <h3 class="user-badge_name">{{ fullName }}</h3>
+    <span>{{ position }}</span>
+  </div>
+</div>
