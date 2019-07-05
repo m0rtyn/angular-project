@@ -1,12 +1,13 @@
+@import '../../../styles/mixins';
+
 :host {
   display: inline-block;
   min-width: 256px;
 }
 
 .checkbox {
-  display: block;
-  padding: 8px;
-  color: var(--color-font-main);
+  @include form-element;
+  max-width: 50%;
 
   &::before {
     content: '';

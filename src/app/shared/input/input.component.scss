@@ -1,12 +1,25 @@
+@import '../../../styles/mixins';
+
 :host {
   display: inline-block;
   min-width: 256px;
 }
 
 .input {
-  display: block;
-  padding: 8px;
-  color: var(--color-font-main);
+  @include form-element;
+
+  &_label {
+    @include form-element-label;
+  }
+
+  &_field {
+    @include form-element-field;
+    padding: 0 10px;
+
+    &:placeholder-shown {
+      color: var(--color-hinted);
+    }
+  }
 }
 
 .input--error {
@@ -28,30 +41,5 @@
 
   .input_field {
     border-color: var(--color-hinted);
-  }
-}
-
-.input_label {
-  font-size: var(--font-size-small);
-}
-
-.input_field {
-  display: block;
-  height: 32px;
-  width: 100%;
-  border: 1px solid var(--color-hinted);
-  border-radius: 2px;
-  padding: 0 10px;
-
-  &[disabled] {
-    background-color: var(--color-white);
-  }
-
-  &:placeholder-shown {
-    color: var(--color-hinted);
-  }
-
-  &:focus {
-    border-color: var(--color-highlight);
   }
 }
