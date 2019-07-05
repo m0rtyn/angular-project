@@ -1,11 +1,32 @@
-@mixin form-field {
+
+@mixin form-element {
+  display: block;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  color: var(--color-font-main);
+  max-width: 100%;
+}
+
+@mixin form-element-field {
   display: block;
   height: 32px;
   width: 100%;
-  max-width: 100%;
   border: 1px solid var(--color-hinted);
   border-radius: 2px;
   color: var(--color-font-main);
   background-color: var(--color-white);
+
+  &[disabled] {
+    color: var(--color-hinted);
+    background-color: var(--color-white);
+  }
+
+  &:focus {
+    border-color: var(--color-highlight);
+  }
 }
 
+@mixin form-element-label {
+  font-size: var(--font-size-small);
+  line-height: 24px;
+}
