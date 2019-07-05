@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Details } from './details';
 
 @Component({
-  selector: 'app-profile-edit-details',
+  selector: 'profile-edit-details',
   templateUrl: './profile-edit-details.component.html',
-  styleUrls: ['./profile-edit-details.component.scss']
+  styleUrls: ['../profile.component.scss', './profile-edit-details.component.scss']
 })
-export class ProfileEditDetailsComponent implements OnInit {
+export class ProfileEditDetailsComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  model = new Details();
 }

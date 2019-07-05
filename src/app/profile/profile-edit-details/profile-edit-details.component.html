@@ -1,3 +1,28 @@
-<p>
-  profile-edit-details works!
-</p>
+<section class="profile_edit-details">
+  <h2>Profile details</h2>
+  <div class="profile_user-badge">
+    <profile-avatar size="medium"></profile-avatar>
+    <div class="profile_user-info">
+      <h3 class="profile_user-name">Ivan Doev</h3>
+      <span>UI developer (crafting Team)</span>
+    </div>
+  </div>
+  <form class="profile_form" action="saveDetailsChanges">
+    <div>
+      <!-- <app-input [(ngModel)]="model.firstName")]>First name</app-input> -->
+      <app-input>First name</app-input>
+      <app-input>Last name</app-input>
+    </div>
+    <div>
+      <app-input>Company name</app-input>
+      <app-input>Job title</app-input>
+    </div>
+    <div>
+      <app-input>Location</app-input>
+      <app-input type="tel">Phone number</app-input>
+    </div>
+
+    <app-button>Save changes</app-button>
+    <app-button pseudo="true">Cancel</app-button>
+  </form>
+</section>
