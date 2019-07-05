@@ -12,6 +12,7 @@ export class InputComponent implements OnInit {
   @Input() placeholder = '';
   @Input() error = false;
   @Input() disabled = false;
+  @Input() type = 'text';
 
   ngOnInit() {
   }
