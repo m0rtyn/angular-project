@@ -15,13 +15,13 @@
     width: 16px;
     height: 16px;
     vertical-align: middle;
-    background-image: url(../../../assets/unchecked/normal1.svg)
+    background-image: url(../../../assets/icons/unchecked/normal1.svg)
   }
 }
 
 .checkbox--checked {
   &::before {
-    background-image: url(../../../assets/checked/normal.svg)
+    background-image: url(../../../assets/icons/checked/normal.svg)
   }
 }
 
