@@ -1,8 +1,13 @@
-<app-header></app-header>
-<div class="page-layout_wrapper">
-  <app-sidebar></app-sidebar>
-  <div class="page-layout_content">
-    <ng-content></ng-content>
+<div class="page-layout">
+  <app-header></app-header>
+  <h1 class="visually-hidden">
+    Focusality
+  </h1>
+  <div class="page-layout_wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="page-layout_content">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>
 
