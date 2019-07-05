@@ -10,6 +10,7 @@ import { CheckboxComponent } from '../shared/checkbox/checkbox.component';
   declarations: [UiKitComponent, ButtonComponent, InputComponent, DropdownComponent, CheckboxComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ButtonComponent, InputComponent, DropdownComponent, CheckboxComponent]
 })
 export class UiKitModule { }
