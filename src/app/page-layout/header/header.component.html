@@ -3,5 +3,52 @@
     class="header_logo"
     src="../../../assets/icons/logo__legacy_icon.svg"
   />
-  <!-- <app-menu></app-menu> -->
+  <div
+    class="header_dropdown-menu"
+    [ngClass]="{'header_dropdown-menu--opened': opened}"
+    (click)="toggleDropdown()"
+  >
+    <user-badge
+    size="small"
+    firstName="Ivan"
+    position="Wrike Team"
+    >
+    </user-badge>
+    <nav class="header_dropdown-nav nav">
+      <ul class="header_dropdown-list nav_list">
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Profile settings
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Team directory
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Apps & integrations
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Mobile apps
+          </a>
+        </li>
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Help
+          </a>
+        </li>
+        <hr class="header_dropdown-divider">
+        <li class="nav_item">
+          <a class="header_dropdown-link nav-link" href="#">
+            Log out
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <img class="header_dropdown-arrow" src="../../../assets/icons/down-semibold_icon.svg" />
+  </div>
 </header>

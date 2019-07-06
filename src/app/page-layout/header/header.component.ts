@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['../page-layout.component.scss', './header.component.scss']
 })
-export class HeaderComponent implements OnInit {
 
-  constructor() { }
+export class HeaderComponent {
 
-  ngOnInit() {
+  opened = false;
+
+  toggleDropdown() {
+    console.log(this.opened);
+    this.opened = !this.opened;
   }
 
 }
