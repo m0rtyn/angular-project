@@ -7,6 +7,7 @@
 
 .dropdown {
   @include form-element;
+  position: relative;
 
   &_label {
     @include form-element-label;
@@ -36,6 +37,17 @@
 
   &_placeholder {
     color: var(--color-hinted);
+  }
+
+  ::after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../../../assets/icons/down-semibold_icon.svg);
+    position: absolute;
+    right: 8px;
+    top: 32px;
   }
 }
 
