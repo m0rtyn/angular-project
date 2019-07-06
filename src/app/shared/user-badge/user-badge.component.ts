@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 export class UserBadgeComponent {
 
   @Input() size = 'small';
-  @Input() fullName = 'noname';
+  @Input() firstName = 'Константин';
+  @Input() lastName = 'Константинопольский';
   @Input() position = '—';
+
+  fullName = `${this.firstName}${this.size !== 'small' ? ' ' + this.lastName : ''}`;
 }

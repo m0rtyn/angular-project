@@ -1,7 +1,10 @@
+:host {
+  margin-left: auto;
+}
+
 .user-badge {
   display: flex;
   align-items: center;
-  margin-top: 32px;
 
   &_avatar {
     border-radius: 50%;
@@ -38,7 +41,25 @@
   }
 
   &_info {
+  }
+
+  &_info--medium {
     margin-left: 24px;
+  }
+
+  &_info--small {
+    margin-left: 8px;
+
+    .user-badge_name {
+      font-size: var(--font-size-default);
+      line-height: 1;
+      font-weight: normal;
+    }
+
+    span {
+      font-size: var(--font-size-small);
+      color: hsla(0, 0%, 100%, 0.64);
+    }
   }
 
   &_name {
