@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "dev": "ng serve",
-    "build": "ng build --prod --base-href \"/angular-project/\"",
-    "deploy": "node deploy.js",
+    "build": "ng build --prod",
+    "deploy": "ng build --prod --base-href \"https://martyn.guru/angular-project/\" --deploy-url \"/angular-project/\" && node deploy.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
