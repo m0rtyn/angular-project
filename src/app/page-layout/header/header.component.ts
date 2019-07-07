@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 
 export class HeaderComponent {
 
-  opened = false;
-
-  toggleDropdown() {
-    console.log(this.opened);
-    this.opened = !this.opened;
-  }
-
 }

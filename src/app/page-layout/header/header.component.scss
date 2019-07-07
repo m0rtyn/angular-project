@@ -18,6 +18,15 @@
     align-items: center;
   }
 
+  &_dropdown-menu:hover &_dropdown-nav {
+    transform: translateY(60%);
+    opacity: 1;
+  }
+
+  &_dropdown-menu:hover &_dropdown-arrow {
+    transform: rotateX(0);
+  }
+
   &_dropdown-nav {
     position: absolute;
     background-color: var(--color-white);
@@ -31,15 +40,6 @@
     transition-property: transform, opacity;
     transition-duration: .3s;
     transition-timing-function: ease-out;
-  }
-
-  &_dropdown-menu--opened &_dropdown-nav {
-    transform: translateY(60%);
-    opacity: 1;
-  }
-
-  &_dropdown-menu--opened &_dropdown-arrow {
-    transform: rotateX(0);
   }
 
   &_dropdown-list {
