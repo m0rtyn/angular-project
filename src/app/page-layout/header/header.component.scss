@@ -20,15 +20,6 @@
     align-items: center;
   }
 
-  &_dropdown-menu:hover &_dropdown-nav {
-    transform: translateY(60%);
-    opacity: 1;
-  }
-
-  &_dropdown-menu:hover &_dropdown-arrow {
-    transform: rotateX(0);
-  }
-
   &_dropdown-nav {
     position: absolute;
     background-color: $color-white;
@@ -42,6 +33,12 @@
     transition-property: transform, opacity;
     transition-duration: .3s;
     transition-timing-function: ease-out;
+    z-index: 1;
+
+    .header_dropdown-menu:hover & {
+      transform: translateY(60%);
+      opacity: 1;
+    }
   }
 
   &_dropdown-list {
@@ -60,5 +57,9 @@
   &_dropdown-arrow {
     margin-left: 4px;
     transform: rotateX(180deg);
+
+    .header_dropdown-menu:hover & {
+      transform: rotateX(0);
+    }
   }
 }
