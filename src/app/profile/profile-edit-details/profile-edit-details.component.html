@@ -1,6 +1,5 @@
 <section class="profile_edit-details">
   <h2>Profile details</h2>
-  <!-- <div class="profile_user-badge"> -->
   <user-badge
     size="medium"
     firstName="Ivan"
@@ -8,22 +7,21 @@
     position="UI developer (crafting Team)"
   >
   </user-badge>
-  <form class="profile_form" action="saveDetailsChanges">
+  <form [formGroup]="profileForm" class="profile_form">
     <div>
-      <!-- <app-input [(ngModel)]="model.firstName")]>First name</app-input> -->
-      <app-input>First name</app-input>
-      <app-input>Last name</app-input>
+      <app-input [control]="profileForm.controls['firstName']" name="first">First name</app-input>
+      <app-input [control]="profileForm.controls['lastName']">Last name</app-input>
     </div>
     <div>
-      <app-input>Company name</app-input>
-      <app-input>Job title</app-input>
+      <app-input [control]="profileForm.controls['companyName']">Company name</app-input>
+      <app-input [control]="profileForm.controls['jobTitle']">Job title</app-input>
     </div>
     <div>
-      <app-input>Location</app-input>
-      <app-input type="tel">Phone number</app-input>
+      <app-input [control]="profileForm.controls['location']">Location</app-input>
+      <app-input [control]="profileForm.controls['phoneNumber']" type="tel">Phone number</app-input>
     </div>
 
-    <app-button>Save changes</app-button>
-    <app-button pseudo="true">Cancel</app-button>
+    <app-button (click)="onSubmit()" [disabled]="profileForm.pristine">Save changes</app-button>
+    <app-button (click)="profileForm.reset()" pseudo="true">Cancel</app-button>
   </form>
 </section>
