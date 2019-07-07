@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, AfterView } from '@angular/core';
 
 @Component({
   selector: 'user-badge',
@@ -12,5 +12,7 @@ export class UserBadgeComponent {
   @Input() lastName = 'Константинопольский';
   @Input() position = '—';
 
-  fullName = `${this.firstName}${this.size !== 'small' ? ' ' + this.lastName : ''}`;
+  get fullName() {
+    return `${this.firstName}${this.size !== 'small' ? ' ' + this.lastName : ''}`;
+  }
 }

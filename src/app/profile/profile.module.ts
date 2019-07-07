@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UiKitModule} from '../ui-kit/ui-kit.module';
+import { SharedModule} from '../shared/shared.module';
 import { ProfileComponent } from './profile.component';
 import { UserBadgeComponent } from '../shared/user-badge/user-badge.component';
 import { ProfileEditDetailsComponent } from './profile-edit-details/profile-edit-details.component';
@@ -16,7 +16,7 @@ import { ProfileWorkspaceSettingsComponent } from './profile-workspace-settings/
   ],
   imports: [
     CommonModule,
-    UiKitModule
+    SharedModule,
   ]
 })
 export class ProfileModule { }
