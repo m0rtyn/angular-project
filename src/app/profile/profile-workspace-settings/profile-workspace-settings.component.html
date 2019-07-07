@@ -1,12 +1,27 @@
 <section class="profile_edit-details">
   <h2>Workspace settings</h2>
-  <form action="saveDetailsChanges">
+  <form>
     <div>
-      <app-dropdown>Time zone</app-dropdown>
-      <app-dropdown>Language</app-dropdown>
+      <app-dropdown
+        [control]="workspaceSettingForm.controls['timezones']"
+        [options]="timezones"
+      >
+      Time zone
+      </app-dropdown>
+      <app-dropdown
+        [control]="workspaceSettingForm.controls['languages']"
+        [options]="languages"
+      >
+        Language
+      </app-dropdown>
     </div>
     <div>
-      <app-dropdown>New task created by default as</app-dropdown>
+      <app-dropdown
+        [control]="workspaceSettingForm.controls['taskStatus']"
+        [options]="taskStatus"
+      >
+        New task created by default as
+      </app-dropdown>
     </div>
     <div>
       <app-checkbox>
@@ -16,6 +31,6 @@
       </app-checkbox>
     </div>
 
-    <app-button>Save settings</app-button>
+    <app-button (click)="onSubmit()">Save settings</app-button>
   </form>
 </section>
