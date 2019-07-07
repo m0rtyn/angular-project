@@ -6,7 +6,7 @@
     <mask id="b" fill="#fff">
       <use xlink:href="#a"/>
     </mask>
-    <g fill="#fff" fill-opacity=".64" mask="url(#b)" opacity=".9">
+    <g fill="#bbb" fill-opacity=".64" mask="url(#b)" opacity=".9">
       <rect width="16" height="16" rx="2"/>
     </g>
   </g>
