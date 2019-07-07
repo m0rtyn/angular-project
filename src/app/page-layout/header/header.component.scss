@@ -1,8 +1,10 @@
+@import '../../../styles/variables';
+
 .header {
   display: flex;
-  background-color: var(--color-panel);
-  color: var(--color-font-inverted);
-  height: var(--height-header);
+  background-color: $color-panel;
+  color: $color-font-inverted;
+  height: $height-header;
   padding: 0 16px;
   align-items: center;
 
@@ -29,7 +31,7 @@
 
   &_dropdown-nav {
     position: absolute;
-    background-color: var(--color-white);
+    background-color: $color-white;
     border-radius: 2px;
     padding: 8px 24px;
     box-shadow:
@@ -47,11 +49,11 @@
   }
 
   &_dropdown-link {
-    color: var(--color-font-main);
+    color: $color-font-main;
   }
 
   &_dropdown-divider {
-    border-color: var(--color-border);
+    border-color: $color-border;
     margin: 8px 0;
   }
 

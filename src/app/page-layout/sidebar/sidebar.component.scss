@@ -1,6 +1,8 @@
+@import '../../../styles/variables';
+
 .sidebar {
-  background-color: var(--color-panel);
-  color: var(--color-font-inverted);
+  background-color: $color-panel;
+  color: $color-font-inverted;
   width: 256px;
   padding: 0 32px;
 }
@@ -32,7 +34,7 @@
   }
 
   &_link {
-    color: var(--color-font-inverted);
+    color: $color-font-inverted;
   }
 
   &_divider {

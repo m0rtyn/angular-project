@@ -1,4 +1,5 @@
 @import "../../../styles/mixins";
+@import "../../../styles/variables";
 
 :host {
   display: inline-block;
@@ -36,7 +37,7 @@
   }
 
   &_placeholder {
-    color: var(--color-hinted);
+    color: $color-hinted;
   }
 
   ::after {
@@ -54,22 +55,22 @@
 .dropdown--error {
 
   .dropdown_label {
-    color: var(--color-error);
+    color: $color-error;
   }
 
   .dropdown_field {
-    border-color: var(--color-error);
+    border-color: $color-error;
   }
 }
 
 .dropdown--disabled {
-  color: var(--color-hinted);
+  color: $color-hinted;
 
   .dropdown_label {
     color: currentColor;
   }
 
   .dropdown_field {
-    border-color: var(--color-hinted);
+    border-color: $color-hinted;
   }
 }

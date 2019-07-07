@@ -1,6 +1,8 @@
+@import '../../../styles/variables';
+
 .button {
-  background-color: var(--color-highlight);
-  color: var(--color-white);
+  background-color: $color-highlight;
+  color: $color-white;
   border-radius: 2px;
   padding: 8px 16px;
   margin: 8px;
@@ -8,37 +10,37 @@
   border: none;
 
   &:hover, &:focus {
-    background-color: var(--color-highlight-3);
+    background-color: $color-highlight-3;
   }
 
   &:active {
-    background-color: var(--color-highlight-2);
+    background-color: $color-highlight-2;
   }
 
   &[disabled] {
-    background-color: var(--color-white);
-    color: var(--color-hinted);
+    background-color: $color-white;
+    color: $color-hinted;
     border: 1px solid currentColor;
   }
 }
 
 .button--pseudo {
   background-color: transparent;
-  color: var(--color-highlight);
+  color: $color-highlight;
 
   &:hover, &:focus {
     background-color: transparent;
-    color: var(--color-highlight-3);
+    color: $color-highlight-3;
   }
 
   &:active {
     background-color: transparent;
-    color: var(--color-highlight-2);
+    color: $color-highlight-2;
   }
 
   &[disabled] {
     background-color: transparent;
-    color: var(--color-hinted);
+    color: $color-hinted;
     border: none;
   }
 }

@@ -1,9 +1,10 @@
+@import './variables';
 
 @mixin form-element {
   display: block;
   margin-right: 32px;
   margin-bottom: 24px;
-  color: var(--color-font-main);
+  color: $color-font-main;
   max-width: 100%;
 }
 
@@ -11,22 +12,22 @@
   display: block;
   height: 32px;
   width: 100%;
-  border: 1px solid var(--color-hinted);
+  border: 1px solid $color-hinted;
   border-radius: 2px;
-  color: var(--color-font-main);
-  background-color: var(--color-white);
+  color: $color-font-main;
+  background-color: $color-white;
 
   &[disabled] {
-    color: var(--color-hinted);
-    background-color: var(--color-white);
+    color: $color-hinted;
+    background-color: $color-white;
   }
 
   &:focus {
-    border-color: var(--color-highlight);
+    border-color: $color-highlight;
   }
 }
 
 @mixin form-element-label {
-  font-size: var(--font-size-small);
+  font-size: $font-size-small;
   line-height: 24px;
 }

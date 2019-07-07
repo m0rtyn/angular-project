@@ -1,9 +1,11 @@
+@import '../../styles/variables';
+
 .page-layout {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
   overflow: hidden;
-  background-color: var(--color-panel);
+  background-color: $color-panel;
   padding: 0 8px;
 }
 
@@ -11,13 +13,13 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: calc(100vh - var(--height-header));
+  height: calc(100vh - #{$height-header});
 }
 
 .page-layout_content {
   height: 100%;
   overflow: scroll;
-  background-color: var(--color-white);
+  background-color: $color-white;
   border-radius: 2px;
   padding: 0 48px;
   flex-grow: 1;

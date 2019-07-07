@@ -1,7 +1,7 @@
 body {
-  font-size: var(--font-size-default);
-  line-height: var(--line-height-default);
-  color: var(--color-font-main);
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $color-font-main;
 }
 
 h2 {
@@ -20,7 +20,7 @@ h4 {
 }
 
 a {
-  color: var(--color-highlight);
+  color: $color-highlight;
   text-decoration: none;
   cursor: pointer;
 
@@ -30,5 +30,5 @@ a {
 }
 
 .text-secondary {
-  font-size: var(--font-size-small);
+  font-size: $font-size-small;
 }

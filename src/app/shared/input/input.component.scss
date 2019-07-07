@@ -1,4 +1,5 @@
 @import '../../../styles/mixins';
+@import '../../../styles/variables';
 
 :host {
   display: inline-block;
@@ -17,7 +18,7 @@
     padding: 0 10px;
 
     &:placeholder-shown {
-      color: var(--color-hinted);
+      color: $color-hinted;
     }
   }
 }
@@ -25,21 +26,21 @@
 .input--error {
 
   .input_label {
-    color: var(--color-error);
+    color: $color-error;
   }
 
   .input_field {
-    border-color: var(--color-error);
+    border-color: $color-error;
   }
 }
 
 .input--disabled {
 
   .input_label {
-    color: var(--color-hinted);
+    color: $color-hinted;
   }
 
   .input_field {
-    border-color: var(--color-hinted);
+    border-color: $color-hinted;
   }
 }

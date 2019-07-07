@@ -1,28 +1,25 @@
-:root {
+// === FONTS ===
+$font-family-default: Open Sans, HelveticaNeue, Helvetica, Arial, sans-serif;
 
-  // === FONTS ===
-  --font-family-default: Open Sans, HelveticaNeue, Helvetica, Arial, sans-serif;
+// === TYPOGRAPHY ===
+$font-size-small: 12px;
+$font-size-default: 14px;
+$line-height-default: 22px;
 
-  // === TYPOGRAPHY ===
-  --font-size-small: 12px;
-  --font-size-default: 14px;
-  --line-height-default: 22px;
+// === COLORS ===
+$color-font-main: hsla(0, 0%, 0%, 0.9);
+$color-font-inverted: hsl(0, 0%, 100%, 0.9);
+$color-panel: hsl(209, 38%, 25%);
+$color-highlight: hsl(218, 99%, 63%);
+$color-highlight-2: hsl(218, 77%, 57%);
+$color-highlight-3: hsl(218, 89%, 69%);
+$color-error: hsl(355, 85%, 65%);
+$color-gray: hsl(0, 0%, 67%);
+$color-border: hsl(0, 0%, 100%, 0.16);
+$color-hinted: hsla(0, 0%, 0%, 0.32);
+$color-blacklight: hsl(0, 0%, 100%, 0.04);
+$color-white: white;
+$color-outline: hsl(0, 0%, 0%, 0.16);
 
-  // === COLORS ===
-  --color-font-main: hsla(0, 0%, 0%, 0.9);
-  --color-font-inverted: hsl(0, 0%, 100%, 0.9);
-  --color-panel: hsl(209, 38%, 25%);
-  --color-highlight: hsl(218, 99%, 63%);
-  --color-highlight-2: hsl(218, 77%, 57%);
-  --color-highlight-3: hsl(218, 89%, 69%);
-  --color-error: hsl(355, 85%, 65%);
-  --color-gray: hsl(0, 0%, 67%);
-  --color-border: hsl(0, 0%, 100%, 0.16);
-  --color-hinted: hsla(0, 0%, 0%, 0.32);
-  --color-blacklight: hsl(0, 0%, 100%, 0.04);
-  --color-white: white;
-  --color-outline: hsl(0, 0%, 0%, 0.16);
-
-  // === OTHER ===
-  --height-header: 56px;
-}
+// === OTHER ===
+$height-header: 56px;
