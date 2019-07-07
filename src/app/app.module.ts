@@ -7,16 +7,20 @@ import { ProfileModule } from './profile/profile.module';
 import { AppComponent } from './app.component';
 import { UiKitComponent } from './ui-kit/ui-kit.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+// import { UserBadgeComponent } from './shared/user-badge/user-badge.component';
 
 
 const appRoutes = [
-  // { path: '', component: AppComponent },
+  { path: '', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'ui-kit', component: UiKitComponent }
 ];
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    // UserBadgeComponent
   ],
   imports: [
     BrowserModule,
