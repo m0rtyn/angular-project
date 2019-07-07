@@ -1,4 +1,4 @@
-import { Component, Input, AfterView } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'user-badge',
