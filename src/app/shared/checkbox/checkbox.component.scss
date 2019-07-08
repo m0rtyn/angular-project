@@ -8,7 +8,7 @@
 
 .checkbox {
   @include form-element;
-  max-width: 100%;
+  max-width: 50%;
   display: flex;
 
   &_icon {
