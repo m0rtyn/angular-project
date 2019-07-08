@@ -1,9 +1,13 @@
 <label
   class="checkbox"
-  [class.checkbox--checked]="isChecked"
   [class.checkbox--error]="error"
   [class.checkbox--disabled]="disabled"
 >
+  <svg class="checkbox_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <path class="checkbox_box" fill="#000" fill-opacity=".3" fill-rule="evenodd" d="M0 4C0 3 .9 2 2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm1 0v8c0 .5.4 1 1 1h8c.5 0 1-.4 1-1V4c0-.5-.4-1-1-1H2a1 1 0 0 0-1 1z" />
+    <polygon class="checkbox_check" *ngIf="isChecked" fill="#48F" stroke-width="1px" stroke="#fff" points="3.5 6 6.5 9 13.5 2 15 3.5 6.5 12 2 7.5" />
+  </svg>
+
   <input
     class="checkbox_field"
     type="checkbox"

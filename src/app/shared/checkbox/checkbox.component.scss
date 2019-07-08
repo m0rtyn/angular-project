@@ -8,68 +8,70 @@
 
 .checkbox {
   @include form-element;
-  max-width: 50%;
+  max-width: 100%;
 
-  &::before {
-    content: '';
+  &_icon {
     display: inline-block;
     width: 16px;
     height: 16px;
     vertical-align: middle;
-    background-image: url(../../../assets/icons/unchecked/normal1.svg)
+  }
+
+  &_field {
+    height: 16px;
+    width: 16px;
+    border: 1px solid $color-hinted;
+    border-radius: 2px;
+    padding: 0 10px;
+    display: none;
   }
 }
 
-.checkbox--checked {
-  &::before {
-    background-image: url(../../../assets/icons/checked/normal.svg)
+.checkbox:hover {
+  .checkbox_check, .checkbox_box {
+    fill: $color-highlight-3;
+    fill-opacity: 1;
+  }
+
+  .checkbox_label {
+    color: $color-highlight-3;
+  }
+}
+
+.checkbox:focus {
+  .checkbox_check, .checkbox_box {
+    fill: $color-highlight;
+    fill-opacity: 1;
+  }
+
+  .checkbox_label {
+    color: $color-highlight;
   }
 }
 
 .checkbox--error {
-
-  .checkbox_label {
-    color: $color-error;
+  .checkbox_check, .checkbox_box {
+    fill: $color-error !important;
+    fill-opacity: 1;
   }
 
-  .checkbox_field {
-    border-color: $color-error;
+  .checkbox_label {
+    color: $color-error !important;
   }
 }
 
 .checkbox--disabled {
-
-  .checkbox_label {
-    color: $color-hinted;
+  .checkbox_check, .checkbox_box {
+    fill: $color-hinted !important;
+    fill-opacity: 1;
   }
 
-  .checkbox_field {
-    border-color: $color-hinted;
+  .checkbox_label {
+    color: $color-hinted !important;
   }
 }
 
 .checkbox_label {
   font-size: $font-size-small;
   margin-left: 4px;
-}
-
-.checkbox_field {
-  height: 16px;
-  width: 16px;
-  border: 1px solid $color-hinted;
-  border-radius: 2px;
-  padding: 0 10px;
-  display: none;
-
-  &[disabled] {
-    background-color: $color-white;
-  }
-
-  &:placeholder-shown {
-    color: $color-hinted;
-  }
-
-  &:focus {
-    border-color: $color-highlight;
-  }
 }

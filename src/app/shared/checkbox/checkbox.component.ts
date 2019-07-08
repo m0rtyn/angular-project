@@ -20,7 +20,6 @@ export class CheckboxComponent implements OnInit {
   }
 
   handleClick() {
-    console.log(this.isChecked);
     this.isChecked = !this.isChecked;
   }
 }
