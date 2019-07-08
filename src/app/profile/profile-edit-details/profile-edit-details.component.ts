@@ -6,6 +6,7 @@ import { FormBuilder, Validators } from '@angular/forms';
   templateUrl: './profile-edit-details.component.html',
   styleUrls: ['../profile.component.scss', './profile-edit-details.component.scss']
 })
+
 export class ProfileEditDetailsComponent {
 
   public profileForm = this.formBuilder.group({
@@ -18,9 +19,6 @@ export class ProfileEditDetailsComponent {
   });
 
   constructor(private formBuilder: FormBuilder) {}
-
-  // model = new Details();
-  // submitted = false;
 
   onSubmit() {
     console.log(this.profileForm.value);
