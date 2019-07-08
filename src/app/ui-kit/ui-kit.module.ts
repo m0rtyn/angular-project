@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UiKitComponent } from './ui-kit.component';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -10,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   // exports: [ButtonComponent, InputComponent, DropdownComponent, CheckboxComponent]
 })

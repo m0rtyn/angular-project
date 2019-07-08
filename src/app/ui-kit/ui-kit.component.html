@@ -6,32 +6,34 @@
   <p class="text-secondary">Secondary text</p>
   <p>Some multiline text Some multiline text Some multiline text Some multiline textSome multiline text Some multiline text Some multiline textSome multiline textSome multiline text Some multiline text Some multiline text Some multiline textSome multiline text Some multiline textSome multiline textSome multiline text Some multiline text. <a>unusable link</a></p>
 
-  <p>
-    <app-button>Default button</app-button>
-    <app-button disabled="true">Disabled button</app-button>
-    <br>
-    <app-button pseudo="true">Pseudo button</app-button>
-    <app-button pseudo="true" [disabled]="true">Disabled pseudo button</app-button>
-  </p>
+  <form [formGroup]="uikitForm">
+    <p>
+      <app-button>Default button</app-button>
+      <app-button disabled="true">Disabled button</app-button>
+      <br>
+      <app-button pseudo="true">Pseudo button</app-button>
+      <app-button pseudo="true" [disabled]="true">Disabled pseudo button</app-button>
+    </p>
 
-  <p>
-    <app-input></app-input>
-    <app-input placeholder="Placeholder">Input</app-input>
-    <app-input placeholder="Placeholder" error="true">With error</app-input>
-    <app-input placeholder="Placeholder" disabled="true">Disabled input</app-input>
-  </p>
+    <p>
+      <app-input [control]="uikitForm.controls['value']"></app-input>
+      <app-input [control]="uikitForm.controls['value']" placeholder="Placeholder">Input</app-input>
+      <app-input [control]="uikitForm.controls['value']" placeholder="Placeholder" error="true">With error</app-input>
+      <app-input [control]="uikitForm.controls['value']" placeholder="Placeholder" disabled="true">Disabled input</app-input>
+    </p>
 
-  <p>
-    <app-dropdown></app-dropdown>
-    <app-dropdown placeholder="Placeholder">Dropdown</app-dropdown>
-    <app-dropdown placeholder="Placeholder" error="true">With error</app-dropdown>
-    <app-dropdown placeholder="Placeholder" disabled="true">Disabled dropdown</app-dropdown>
-  </p>
+    <p>
+      <app-dropdown [control]="uikitForm.controls['value']"></app-dropdown>
+      <app-dropdown [control]="uikitForm.controls['value']" placeholder="Placeholder">Dropdown</app-dropdown>
+      <app-dropdown [control]="uikitForm.controls['value']" placeholder="Placeholder" error="true">With error</app-dropdown>
+      <app-dropdown [control]="uikitForm.controls['value']" placeholder="Placeholder" disabled="true">Disabled dropdown</app-dropdown>
+    </p>
 
-  <p>
-    <app-checkbox></app-checkbox>
-    <app-checkbox>Checkbox</app-checkbox>
-    <app-checkbox error="true">Checkbox with error</app-checkbox>
-    <app-checkbox disabled="true">Disabled checkbox</app-checkbox>
-  </p>
+    <p>
+      <app-checkbox></app-checkbox>
+      <app-checkbox>Checkbox</app-checkbox>
+      <app-checkbox error="true">Checkbox with error</app-checkbox>
+      <app-checkbox disabled="true">Disabled checkbox</app-checkbox>
+    </p>
+  </form>
 </section>
