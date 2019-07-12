@@ -15,6 +15,8 @@ SCACSS, BEM
 ### Demo
 
 <https://martyn.guru/angular-project/>
+<https://https://brave-lumiere-27e83e.netlify.com/ui-kit>
+*для обхода блокировки ip адресов Netlify используй proxy/vpn*
 
 ## Разработка
 
@@ -27,5 +29,3 @@ SCACSS, BEM
 ## Деплой
 
 `yarn deploy` настроен для домена https://martyn.guru/angular-project/
-
-## 
