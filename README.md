@@ -10,7 +10,7 @@ Angular 8, Webpack, SCSS
 
 ### Методологии
 
-SCACSS, BEM
+SMACSS, BEM
 
 ### Demo
 
