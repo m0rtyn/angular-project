@@ -14,8 +14,9 @@ SCACSS, BEM
 
 ### Demo
 
-<https://martyn.guru/angular-project/>
-<https://https://brave-lumiere-27e83e.netlify.com/ui-kit>
+- <https://martyn.guru/angular-project/>
+- <https://https://brave-lumiere-27e83e.netlify.com/ui-kit>
+
 *для обхода блокировки ip адресов Netlify используй proxy/vpn*
 
 ## Разработка
